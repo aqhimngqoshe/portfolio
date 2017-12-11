@@ -1,0 +1,993 @@
+/*My Portfolio Styling*/
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+/*Background Image Parallax, Intro of Web-developer*/
+.parallax {
+  background-image: url("../images/web-developer2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 500px;
+}
+
+/*Education DIV*/
+.parallax-academic {
+  background-image: url("../images/web-dev.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 500px;
+}
+/*Contact Page*/
+.parallax-contact {
+  background-image: url("../images/web-developer3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 300px;
+}
+
+
+/*Header, Footer*/
+header {
+  height: 30px;
+  color: white;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #404040;
+  color: white;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+}
+footer p {
+  margin-top: 10px;
+}
+/*HEADING*/
+h1 {
+  padding: 60px;
+  margin-left: 350px;
+  font-family: 'Boogaloo', cursive;
+  font-size: 70px;
+  color: white;
+}
+.parallax img {
+  margin-left: 560px;
+  border-radius: 50%;
+  transition: all 2s ease-in-out 0.5s;
+}
+
+.parallax img:hover {
+    -webkit-transform: rotateY(-180deg);
+       -moz-transform: rotateY(-180deg);
+        -ms-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+    transition: all 3s ease-in-out 0s;
+    opacity: 1;
+    transition-property: all;
+}
+
+/*Web Developer*/
+#header-title {
+  margin-left: 530px;
+  font-family: 'Pacifico', cursive;
+  font-size: 35px;
+  color: white;
+}
+/*Quote*/
+#motive-quote {
+  margin-left: 470px;
+  font-size: 20px;
+  font-family: 'Oxygen', sans-serif;
+  color: white;
+  font-style: italic;
+}
+
+/*NavBar*/
+nav {
+  background-color: grey;
+  width: 100%;
+  height: 50px;
+  top: 0px;
+  text-align: center;
+  position: fixed;
+  padding: 30px 0 0 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 30px;
+  list-style-type: none;
+}
+li a {
+  text-decoration: none;
+  color: black;
+  min-width:140px;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+li a:hover {
+  color: orange;
+  text-shadow: 2px 2px black;
+}
+.menu {
+  float: left;
+
+  a {
+    padding: 0 10px;
+  }
+
+  a:hover {
+    color: #c5cae9;
+  }
+}
+/*ABOUT ME*/
+#about-caption {
+  margin-top: 100px;
+}
+#about-caption h2 {
+  margin-top: 60px;
+  font-size: 30px;
+  font-family: 'Boogaloo', cursive;
+  text-align: center;
+  color: black;
+}
+#about-caption hr {
+  width: 100px;
+  height: 2px;
+  border: 1px solid #e69500;
+  background-color: #e69500;
+  text-align: center;
+}
+#about-caption p {
+  margin: 0 10%;
+  text-align: justify;
+  font-family: 'Oxygen', sans-serif;
+  margin-bottom: 20px;
+}
+
+/*Education Skills Style*/
+#education-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: auto;
+  color: black;
+}
+#education-container > div {
+  margin: 0 2%;
+  width: 250px;
+  margin-left: 70px;
+}
+#education-container h4 {
+  font-size: 20px;
+  font-family: 'Boogaloo', cursive;
+  /*margin-left: 370px;*/
+}
+#education-container p {
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+  color: black;
+  margin-bottom: 50px;
+}
+
+/*My Coding Skills*/
+.coding-skills {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+  grid-gap: 70px;
+  margin-bottom: 30px;
+
+}
+.coding-skills img {
+  width: 200px;
+  height: 200px;
+}
+.coding-skills img:hover {
+  transform: rotateY(-180deg);
+  transition: all 3s ease-in-out 0s;
+}
+#slide {
+    position: relative;
+    left: -1300px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 3s forwards;
+    animation-delay: 2s;
+}
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+
+/*Work Skills*/
+#work-skills-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+#work-skills {
+  font-size: 30px;
+  font-family: 'Boogaloo', cursive;
+  text-align: center;
+  color: black;
+}
+#work-skills-container h4 {
+  font-size: 28px;
+  font-family: 'Boogaloo', cursive;
+  text-align: center;
+}
+#work-skills-container p {
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+  color: black;
+}
+.work-skills-button {
+  border: 1px solid lightgrey;
+  margin-left: 260px;
+  border-radius: 10%;
+  font-weight: bold;
+  font-size: 15px;
+  width: 150px;
+  height: 30px;
+}
+.work-skills-button:hover {
+  border: 1px solid orange;
+  background-color: orange;
+  border-radius: 5%;
+  color: lightgrey;
+}
+#code4ct a{
+  text-decoration: none;
+  color: black;
+}
+
+
+#contact-details-container {
+  color: lightgrey;
+  padding: 70px;
+}
+#contact-details-container h2{
+  text-align: center;
+  font-family: 'Boogaloo', cursive;
+  font-size: 50px;
+}
+#contact-details-container h4{
+  text-align: center;
+  font-family: 'Boogaloo', cursive;
+  font-size: 25px;
+}
+#contact-details-container p {
+  text-align: justify;
+  margin-left: 450px;
+  font-family: 'Oxygen', sans-serif;
+  margin-top: 50px;
+  font-size: 18px;
+}
+#contact-details-container p:hover {
+  color: orange;
+  text-shadow: 7px 7px 7px lightblue;
+}
+#contact-details-container ul {
+  margin-top: 50px;
+  margin-left: 430px;
+}
+#contact-details-container ul li {
+  display: inline;
+}
+#contact-details-container ul i {
+  font-size: 30px;
+  border: 10px solid grey;
+  border-width: medium;
+  background-color: grey;
+  border-radius: 50%;
+}
+#contact-details-container ul i:hover {
+  border: 10px solid orange;
+  border-width: medium;
+  color: grey;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+/*Organisation*/
+#contact-details-container li {
+  list-style-type: none;
+}
+#contact-details-container li a{
+  font-size: 20px;
+  font-style: normal;
+  list-style-type: none;
+}
+
+/*Back to Home Page Smooth Scroll*/
+#back-to-top {
+  float: right;
+  width: 60px;
+  height: 60px;
+}
+#back-to-top i {
+  font-size: 50px;
+}
+#back-to-top i:hover {
+  border: 1px solid orange;
+  border-width: medium;
+  color: grey;
+  background-color: orange;
+  border-radius: 60%;
+}
+
+
+@media only screen and (min-device-width: 312px)
+     and (max-device-width: 553px) {
+       /*My Portfolio Styling*/
+
+       body {
+         overflow-x: hidden;
+         width: 100%;
+         background-color: lightgrey;
+       }
+
+       /*Background Image Parallax, Intro of Web-developer*/
+       .parallax {
+         background-image: url("../images/web-developer2.jpg");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;
+         width: 1400px;
+         min-height: 500px;
+       }
+
+       /*Education DIV*/
+       .parallax-academic {
+         background-image: url("../images/web-dev.jpg");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;
+         width: 1400px;
+         height: 300px;
+       }
+       /*Contact Page*/
+       .parallax-contact {
+         background-image: url("../images/web-developer3.jpg");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;
+         width: 1250px;
+         min-height: 300px;
+       }
+
+
+       /*Header, Footer*/
+       header {
+         height: 30px;
+         color: white;
+       }
+       footer {
+         width: 150%;
+         height: auto;
+         background-color: #404040;
+         color: white;
+         text-align: center;
+         font-family: 'Fredoka One', cursive;
+         letter-spacing: 1px;
+       }
+       footer p {
+         font-size: 12px;
+       }
+       /*HEADING*/
+       h1 {
+         padding-left: 90px;
+         font-family: 'Boogaloo', cursive;
+         font-size: 50px;
+         color: white;
+         text-align: center;
+       }
+       .parallax img {
+         margin-left: 720px;
+         border-radius: 50%;
+         transition: all 2s ease-in-out 0.5s;
+       }
+
+       .parallax img:hover {
+           -webkit-transform: rotateY(-180deg);
+              -moz-transform: rotateY(-180deg);
+               -ms-transform: rotateY(-180deg);
+                   transform: rotateY(-180deg);
+           transition: all 3s ease-in-out 0s;
+           opacity: 1;
+           transition-property: all;
+       }
+
+       /*Web Developer*/
+       #header-title {
+         margin-left: 670px;
+         font-family: 'Pacifico', cursive;
+         font-size: 35px;
+         color: white;
+       }
+       /*Quote*/
+       #motive-quote {
+         margin-left: 640px;
+         font-size: 20px;
+         font-family: 'Oxygen', sans-serif;
+         color: white;
+         font-style: italic;
+       }
+
+       /*NavBar*/
+       nav {
+         background-color: grey;
+         width: 100%;
+         height: 50px;
+         top: 0px;
+         text-align: center;
+         position: fixed;
+         padding: 30px 0 0 0;
+       }
+       nav li {
+         display: inline-block;
+         margin-left: 30px;
+         list-style-type: none;
+       }
+       li a {
+         text-decoration: none;
+         color: black;
+         min-width:140px;
+         text-align: center;
+         font-family: 'Fredoka One', cursive;
+         color: white;
+         text-shadow: 2px 2px black;
+       }
+       li a:hover {
+         color: orange;
+         text-shadow: 2px 2px black;
+       }
+       .menu {
+         float: left;
+
+         a {
+           padding: 0 10px;
+         }
+
+         a:hover {
+           color: #c5cae9;
+         }
+       }
+       /*ABOUT ME*/
+       #about-caption {
+         width: 1450px;
+         padding-left: 20px;
+       }
+       #about-caption h2 {
+         margin-top: 60px;
+         font-size: 30px;
+         font-family: 'Boogaloo', cursive;
+         text-align: center;
+         color: black;
+       }
+       #about-caption hr {
+         width: 100px;
+         height: 2px;
+         border: 1px solid #e69500;
+         background-color: #e69500;
+         text-align: center;
+       }
+       #about-caption p {
+         margin: 0 10%;
+         text-align: justify;
+         font-size: 12px;
+         font-family: 'Oxygen', sans-serif;
+         margin-bottom: 20px;
+       }
+
+       /*Education Skills Style*/
+       #education-container {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr;
+         grid-column-gap: 2px;
+         height: auto;
+         color: black;
+       }
+       #education-container > div {
+         margin: 0 5%;
+         width: 100%;
+       }
+       #education-container h4 {
+         font-size: 20px;
+         font-family: 'Boogaloo', cursive;
+       }
+       #education-container p {
+         text-align: center;
+         font-family: 'Oxygen', sans-serif;
+         color: black;
+         font-size: 12px;
+         margin-bottom: 50px;
+       }
+
+       /*My Coding Skills*/
+       .coding-skills {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr;
+       }
+       .coding-skills > div {
+         margin-right: 110px;
+       }
+       .coding-skills img:hover {
+         transform: rotateY(-180deg);
+         transition: all 3s ease-in-out 0s;
+       }
+       .coding-skills div img {
+         width: 150px;
+         height: 150px;
+         margin-left: 50px;
+       }
+       #slide {
+           position: relative;
+           left: -1500px;
+           -webkit-animation: slide 3s forwards;
+           -webkit-animation-delay: 2s;
+           animation: slide 3s forwards;
+           animation-delay: 2s;
+       }
+       @-webkit-keyframes slide {
+           100% { left: 0; }
+       }
+
+       @keyframes slide {
+           100% { left: 0; }
+       }
+
+       #work-skills {
+         margin-left: 450px;
+       }
+       #work-skills-container > div {
+         margin-left: 150px;
+       }
+       #work-skills-container h4 {
+         font-size: 25px;
+         font-family: 'Boogaloo', cursive;
+         margin-left: 100px;
+       }
+       #work-skills-container p {
+         font-family: 'Oxygen', sans-serif;
+         color: black;
+         font-size: 11px;
+       }
+       .work-skills-button {
+         border: 1px solid lightgrey;
+         border-radius: 10%;
+         font-weight: bold;
+         font-size: 20px;
+         width: 150px;
+         height: 50px;
+         margin-right: 150px;
+       }
+       .work-skills-button:hover {
+         border: 1px solid orange;
+         background-color: orange;
+         border-radius: 5%;
+         color: lightgrey;
+       }
+       #contact-details-container {
+         color: lightgrey;
+         padding: 70px;
+       }
+       #contact-details-container h2{
+         text-align: center;
+         font-family: 'Boogaloo', cursive;
+         font-size: 50px;
+       }
+       #contact-details-container h4{
+         margin-left: 30px;
+         font-family: 'Boogaloo', cursive;
+         font-size: 25px;
+       }
+       #contact-details-container p {
+         margin-left: 470px;
+         font-family: 'Oxygen', sans-serif;
+         margin-top: 50px;
+         font-size: 18px;
+       }
+       #contact-details-container .phone {
+         margin-left: 540px;
+       }
+       #contact-details-container p:hover {
+         color: orange;
+         text-shadow: 7px 7px 7px lightblue;
+       }
+       #contact-details-container ul {
+         margin-top: 50px;
+         margin-left: 495px;
+       }
+       #contact-details-container ul li {
+         display: inline;
+       }
+       #contact-details-container ul i {
+         font-size: 30px;
+         border: 10px solid grey;
+         border-width: medium;
+         background-color: grey;
+         border-radius: 50%;
+       }
+       #contact-details-container ul i:hover {
+         border: 10px solid orange;
+         border-width: medium;
+         color: grey;
+         background-color: orange;
+         border-radius: 50%;
+       }
+
+       /*Organisation*/
+       #contact-details-container li {
+         list-style-type: none;
+       }
+       #contact-details-container li a{
+         font-size: 20px;
+         font-style: normal;
+         list-style-type: none;
+       }
+
+       /*Back to Home Page Smooth Scroll*/
+       #back-to-top {
+         float: right;
+         width: 80px;
+         height: 80px;
+         margin-right: 20px;
+       }
+       #back-to-top i {
+         font-size: 50px;
+       }
+       #back-to-top i:hover {
+         border: 1px solid orange;
+         border-width: medium;
+         color: grey;
+         background-color: orange;
+         border-radius: 60%;
+       }
+}
+
+@media only screen and (min-device-width: 481px)
+      and (max-device-width: 812px) {
+        /*My Portfolio Styling*/
+
+        body {
+          overflow-x: hidden;
+          width: 100%;
+          background-color: lightgrey;
+        }
+
+        /*Background Image Parallax, Intro of Web-developer*/
+        .parallax {
+          background-image: url("../images/web-developer2.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          width: 1387px;
+          height: 650px;
+        }
+
+        /*Education DIV*/
+        .parallax-academic {
+          background-image: url("../images/web-dev.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          width: 1320px;
+          height: 300px;
+        }
+        /*Contact Page*/
+        .parallax-contact {
+          background-image: url("../images/web-developer3.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          width: 1250px;
+          min-height: 300px;
+        }
+
+
+        /*Header, Footer*/
+        header {
+          height: 30px;
+          color: white;
+        }
+        footer {
+          width: 100%;
+          height: auto;
+          background-color: #404040;
+          color: white;
+          text-align: center;
+          font-family: 'Fredoka One', cursive;
+          letter-spacing: 1px;
+        }
+        /*HEADING*/
+        h1 {
+          padding-left: 90px;
+          font-family: 'Boogaloo', cursive;
+          font-size: 60px;
+          color: white;
+        }
+        .parallax img {
+          margin-left: 560px;
+          border-radius: 50%;
+          transition: all 2s ease-in-out 0.5s;
+        }
+
+        .parallax img:hover {
+            -webkit-transform: rotateY(-180deg);
+               -moz-transform: rotateY(-180deg);
+                -ms-transform: rotateY(-180deg);
+                    transform: rotateY(-180deg);
+            transition: all 3s ease-in-out 0s;
+            opacity: 1;
+            transition-property: all;
+        }
+
+        /*Web Developer*/
+        #header-title {
+          margin-left: 520px;
+          font-family: 'Pacifico', cursive;
+          font-size: 35px;
+          color: white;
+        }
+        /*Quote*/
+        #motive-quote {
+          margin-left: 460px;
+          font-size: 20px;
+          font-family: 'Oxygen', sans-serif;
+          color: white;
+          font-style: italic;
+        }
+
+        /*NavBar*/
+        nav {
+          background-color: grey;
+          width: 100%;
+          height: 50px;
+          top: 0px;
+          text-align: center;
+          position: fixed;
+          padding: 30px 0 0 0;
+        }
+
+        nav li {
+          display: inline-block;
+          margin-left: 30px;
+          list-style-type: none;
+        }
+        li a {
+          text-decoration: none;
+          color: black;
+          min-width:140px;
+          text-align: center;
+          font-family: 'Fredoka One', cursive;
+          color: white;
+          text-shadow: 2px 2px black;
+        }
+        li a:hover {
+          color: orange;
+          text-shadow: 2px 2px black;
+        }
+        .menu {
+          float: left;
+
+          a {
+            padding: 0 10px;
+          }
+
+          a:hover {
+            color: #c5cae9;
+          }
+        }
+        /*ABOUT ME*/
+        #about-caption {
+          width: 1200px;
+          padding-left: 50px;
+        }
+        #about-caption h2 {
+          margin-top: 60px;
+          font-size: 35px;
+          font-family: 'Boogaloo', cursive;
+          text-align: center;
+          color: black;
+        }
+        #about-caption hr {
+          width: 100px;
+          height: 2px;
+          border: 1px solid #e69500;
+          background-color: #e69500;
+          text-align: center;
+        }
+        #about-caption p {
+          margin: 0 5%;
+          text-align: justify;
+          font-size: 14px;
+          font-family: 'Oxygen', sans-serif;
+          margin-bottom: 20px;
+        }
+
+        /*Education Skills Style*/
+        #education-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-column-gap: 2px;
+          height: auto;
+          color: black;
+        }
+        #education-container > div {
+          margin: 0 10%;
+        }
+        #education-container h4 {
+          font-size: 20px;
+          font-family: 'Boogaloo', cursive;
+        }
+        #education-container p {
+          text-align: center;
+          font-family: 'Oxygen', sans-serif;
+          color: black;
+          font-size: 13px;
+          margin-bottom: 50px;
+        }
+
+        /*My Coding Skills*/
+        .coding-skills {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+        }
+        .coding-skills > div {
+          margin-right: 110px;
+        }
+        .coding-skills img:hover {
+          transform: rotateY(-180deg);
+          transition: all 3s ease-in-out 0s;
+        }
+        #slide {
+            position: relative;
+            left: -1500px;
+            -webkit-animation: slide 3s forwards;
+            -webkit-animation-delay: 2s;
+            animation: slide 3s forwards;
+            animation-delay: 2s;
+        }
+        @-webkit-keyframes slide {
+            100% { left: 0; }
+        }
+
+        @keyframes slide {
+            100% { left: 0; }
+        }
+
+
+        #work-skills-container h4 {
+          font-size: 25px;
+          font-family: 'Boogaloo', cursive;
+          margin-left: 200px;
+        }
+        #work-skills-container p {
+          font-family: 'Oxygen', sans-serif;
+          color: black;
+          font-size: 11px;
+        }
+        .work-skills-button {
+          border: 1px solid lightgrey;
+          border-radius: 10%;
+          font-weight: bold;
+          font-size: 18px;
+          width: 200px;
+          height: 50px;
+        }
+        .work-skills-button:hover {
+          border: 1px solid orange;
+          background-color: orange;
+          border-radius: 5%;
+          color: lightgrey;
+        }
+
+
+        #contact-details-container {
+          color: lightgrey;
+          padding: 70px;
+        }
+        #contact-details-container h2{
+          text-align: center;
+          font-family: 'Boogaloo', cursive;
+          font-size: 50px;
+        }
+        #contact-details-container h4{
+          text-align: center;
+          font-family: 'Boogaloo', cursive;
+          font-size: 25px;
+        }
+        #contact-details-container p {
+          text-align: justify;
+          margin-left: 470px;
+          font-family: 'Oxygen', sans-serif;
+          margin-top: 50px;
+          font-size: 18px;
+        }
+        #contact-details-container p:hover {
+          color: orange;
+          text-shadow: 7px 7px 7px lightblue;
+        }
+        #contact-details-container ul {
+          margin-top: 50px;
+          margin-left: 430px;
+        }
+        #contact-details-container ul li {
+          display: inline;
+        }
+        #contact-details-container ul i {
+          font-size: 30px;
+          border: 10px solid grey;
+          border-width: medium;
+          background-color: grey;
+          border-radius: 50%;
+        }
+        #contact-details-container ul i:hover {
+          border: 10px solid orange;
+          border-width: medium;
+          color: grey;
+          background-color: orange;
+          border-radius: 50%;
+        }
+
+        /*Organisation*/
+        #contact-details-container li {
+          list-style-type: none;
+        }
+        #contact-details-container li a{
+          font-size: 20px;
+          font-style: normal;
+          list-style-type: none;
+        }
+
+        /*Back to Home Page Smooth Scroll*/
+        #back-to-top {
+          float: right;
+          width: 80px;
+          height: 80px;
+          margin-right: 20px;
+        }
+        #back-to-top i {
+          font-size: 50px;
+        }
+        #back-to-top i:hover {
+          border: 1px solid orange;
+          border-width: medium;
+          color: grey;
+          background-color: orange;
+          border-radius: 60%;
+        }
+}
