@@ -339,13 +339,12 @@ li a:hover {
 }
 
 
-@media and screen and (min-device-width: 312px)
-     and (max-device-width: 553px) {
+@media only screen and (min-device-width: 0px)
+     and (max-device-width: 473px) {
        /*My Portfolio Styling*/
 
        body {
          overflow-x: hidden;
-         width: 100%;
          background-color: lightgrey;
        }
 
@@ -356,7 +355,7 @@ li a:hover {
          background-repeat: no-repeat;
          background-attachment: fixed;
          background-size: cover;
-         width: 1400px;
+         width: 1500px;
          min-height: 500px;
        }
 
@@ -367,7 +366,7 @@ li a:hover {
          background-repeat: no-repeat;
          background-attachment: fixed;
          background-size: cover;
-         width: 1400px;
+         width: 1500px;
          height: 300px;
        }
        /*Contact Page*/
@@ -377,7 +376,7 @@ li a:hover {
          background-repeat: no-repeat;
          background-attachment: fixed;
          background-size: cover;
-         width: 1250px;
+         width: 1500px;
          min-height: 300px;
        }
 
@@ -401,14 +400,14 @@ li a:hover {
        }
        /*HEADING*/
        h1 {
-         padding-left: 90px;
          font-family: 'Boogaloo', cursive;
-         font-size: 50px;
+         font-size: 60px;
          color: white;
-         text-align: center;
+         /*margin-right: 250px;*/
        }
+
        .parallax img {
-         margin-left: 720px;
+         margin-left: 540px;
          border-radius: 50%;
          transition: all 2s ease-in-out 0.5s;
        }
@@ -425,14 +424,14 @@ li a:hover {
 
        /*Web Developer*/
        #header-title {
-         margin-left: 670px;
+         margin-left: 490px;
          font-family: 'Pacifico', cursive;
          font-size: 35px;
          color: white;
        }
        /*Quote*/
        #motive-quote {
-         margin-left: 640px;
+         margin-left: 450px;
          font-size: 20px;
          font-family: 'Oxygen', sans-serif;
          color: white;
@@ -515,18 +514,19 @@ li a:hover {
          color: black;
        }
        #education-container > div {
-         margin: 0 5%;
-         width: 100%;
+         margin-right: 70px;
+         width: 100%
        }
        #education-container h4 {
-         font-size: 20px;
+         margin: 0 5%;
+         font-size: 26px;
          font-family: 'Boogaloo', cursive;
        }
        #education-container p {
-         text-align: center;
+         margin: 0 5%;
          font-family: 'Oxygen', sans-serif;
          color: black;
-         font-size: 12px;
+         font-size: 16px;
          margin-bottom: 50px;
        }
 
@@ -537,7 +537,7 @@ li a:hover {
          grid-template-rows: 1fr 1fr;
        }
        .coding-skills > div {
-         margin-right: 110px;
+         margin-right: 20px;
        }
        .coding-skills img:hover {
          transform: rotateY(-180deg);
@@ -578,8 +578,10 @@ li a:hover {
        #work-skills-container p {
          font-family: 'Oxygen', sans-serif;
          color: black;
-         font-size: 11px;
+         font-size: 12px;
+         margin-left: 100px;
        }
+
        .work-skills-button {
          border: 1px solid lightgrey;
          border-radius: 10%;
@@ -610,13 +612,14 @@ li a:hover {
          font-size: 25px;
        }
        #contact-details-container p {
-         margin-left: 470px;
+         margin-left: 590px;
          font-family: 'Oxygen', sans-serif;
          margin-top: 50px;
          font-size: 18px;
        }
+
        #contact-details-container .phone {
-         margin-left: 540px;
+         margin-left: 650px;
        }
        #contact-details-container p:hover {
          color: orange;
@@ -624,7 +627,7 @@ li a:hover {
        }
        #contact-details-container ul {
          margin-top: 50px;
-         margin-left: 495px;
+         margin-left: 605px;
        }
        #contact-details-container ul li {
          display: inline;
@@ -673,7 +676,7 @@ li a:hover {
        }
 }
 
-@media only screen and (min-device-width: 481px)
+@media only screen and (min-device-width: 474px)
       and (max-device-width: 812px) {
         /*My Portfolio Styling*/
 
