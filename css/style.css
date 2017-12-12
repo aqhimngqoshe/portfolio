@@ -113,7 +113,6 @@ nav li {
 li a {
   text-decoration: none;
   color: black;
-  min-width:140px;
   text-align: center;
   font-family: 'Fredoka One', cursive;
   color: white;
@@ -220,13 +219,14 @@ li a:hover {
 
 /*Work Skills*/
 #work-skills-container {
-  width: 100%;
+  width: 95%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  margin-top: 60px;
-  margin-bottom: 50px;
 }
+#work-skills-container > div {
+  margin-left: 10px;
+}
+/*Work Experience h2*/
 #work-skills {
   font-size: 30px;
   font-family: 'Boogaloo', cursive;
@@ -239,31 +239,12 @@ li a:hover {
   text-align: center;
 }
 #work-skills-container p {
-  text-align: center;
+  text-align: justify;
   font-family: 'Oxygen', sans-serif;
   color: black;
 }
-.work-skills-button {
-  border: 1px solid lightgrey;
-  margin-left: 260px;
-  border-radius: 10%;
-  font-weight: bold;
-  font-size: 15px;
-  width: 150px;
-  height: 30px;
-}
-.work-skills-button:hover {
-  border: 1px solid orange;
-  background-color: orange;
-  border-radius: 5%;
-  color: lightgrey;
-}
-#code4ct a{
-  text-decoration: none;
-  color: black;
-}
 
-
+/*My Contact Details*/
 #contact-details-container {
   color: lightgrey;
   padding: 70px;
@@ -280,10 +261,14 @@ li a:hover {
 }
 #contact-details-container p {
   text-align: justify;
-  margin-left: 450px;
+  margin-left: 425px;
   font-family: 'Oxygen', sans-serif;
   margin-top: 50px;
   font-size: 18px;
+}
+#contact-details-container .phone {
+  font-size: 18px;
+  margin-left: 495px;
 }
 #contact-details-container p:hover {
   color: orange;
@@ -291,7 +276,7 @@ li a:hover {
 }
 #contact-details-container ul {
   margin-top: 50px;
-  margin-left: 430px;
+  margin-left: 460px;
 }
 #contact-details-container ul li {
   display: inline;
@@ -564,12 +549,9 @@ li a:hover {
 
     /*Work Skills*/
     #work-skills-container {
-      width: 100%;
+      width: 95%;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      margin-top: 60px;
-      margin-bottom: 50px;
     }
     #work-skills {
       font-size: 30px;
@@ -583,24 +565,9 @@ li a:hover {
       text-align: center;
     }
     #work-skills-container p {
-      text-align: center;
+      text-align: justify;
       font-family: 'Oxygen', sans-serif;
       color: black;
-    }
-    .work-skills-button {
-      border: 1px solid lightgrey;
-      margin-left: 220px;
-      border-radius: 10%;
-      font-weight: bold;
-      font-size: 15px;
-      width: 150px;
-      height: 30px;
-    }
-    .work-skills-button:hover {
-      border: 1px solid orange;
-      background-color: orange;
-      border-radius: 5%;
-      color: lightgrey;
     }
 
     #contact-details-container {
@@ -923,24 +890,9 @@ li a:hover {
       text-align: center;
     }
     #work-skills-container p {
-      text-align: center;
+      text-align: justify;
       font-family: 'Oxygen', sans-serif;
       color: black;
-    }
-    .work-skills-button {
-      border: 1px solid lightgrey;
-      margin-left: 220px;
-      border-radius: 10%;
-      font-weight: bold;
-      font-size: 15px;
-      width: 150px;
-      height: 30px;
-    }
-    .work-skills-button:hover {
-      border: 1px solid orange;
-      background-color: orange;
-      border-radius: 5%;
-      color: lightgrey;
     }
 
     #contact-details-container {
@@ -1265,24 +1217,9 @@ li a:hover {
       text-align: center;
     }
     #work-skills-container p {
-      text-align: center;
+      text-align: justify;
       font-family: 'Oxygen', sans-serif;
       color: black;
-    }
-    .work-skills-button {
-      border: 1px solid lightgrey;
-      margin-left: 230px;
-      border-radius: 10%;
-      font-weight: bold;
-      font-size: 15px;
-      width: 150px;
-      height: 30px;
-    }
-    .work-skills-button:hover {
-      border: 1px solid orange;
-      background-color: orange;
-      border-radius: 5%;
-      color: lightgrey;
     }
 
     #contact-details-container {
@@ -1600,24 +1537,9 @@ li a:hover {
       text-align: center;
     }
     #work-skills-container p {
-      text-align: center;
+      text-align: justify;
       font-family: 'Oxygen', sans-serif;
       color: black;
-    }
-    .work-skills-button {
-      border: 1px solid lightgrey;
-      margin-left: 550px;
-      border-radius: 10%;
-      font-weight: bold;
-      font-size: 15px;
-      width: 150px;
-      height: 30px;
-    }
-    .work-skills-button:hover {
-      border: 1px solid orange;
-      background-color: orange;
-      border-radius: 5%;
-      color: lightgrey;
     }
 
     #contact-details-container {
@@ -1937,24 +1859,9 @@ li a:hover {
       text-align: center;
     }
     #work-skills-container p {
-      text-align: center;
+      text-align: justify;
       font-family: 'Oxygen', sans-serif;
       color: black;
-    }
-    .work-skills-button {
-      border: 1px solid lightgrey;
-      margin-left: 360px;
-      border-radius: 10%;
-      font-weight: bold;
-      font-size: 15px;
-      width: 150px;
-      height: 30px;
-    }
-    .work-skills-button:hover {
-      border: 1px solid orange;
-      background-color: orange;
-      border-radius: 5%;
-      color: lightgrey;
     }
 
     #contact-details-container {
