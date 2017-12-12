@@ -173,10 +173,10 @@ li a:hover {
 #education-container h4 {
   font-size: 20px;
   font-family: 'Boogaloo', cursive;
-  /*margin-left: 370px;*/
+  text-decoration: underline;
 }
 #education-container p {
-  text-align: center;
+  text-align: left;
   font-family: 'Oxygen', sans-serif;
   color: black;
   margin-bottom: 50px;
@@ -237,11 +237,14 @@ li a:hover {
   font-size: 28px;
   font-family: 'Boogaloo', cursive;
   text-align: center;
+  text-decoration: underline;
 }
 #work-skills-container p {
-  text-align: justify;
+  text-align: left;
   font-family: 'Oxygen', sans-serif;
   color: black;
+  padding-left: 60px;
+  padding-right: 40px;
 }
 
 /*My Contact Details*/
@@ -551,6 +554,7 @@ li a:hover {
       width: 95%;
       display: grid;
       grid-template-columns: 1fr 1fr;
+
     }
     #work-skills {
       font-size: 30px;
@@ -568,6 +572,8 @@ li a:hover {
       text-align: left;
       font-family: 'Oxygen', sans-serif;
       color: black;
+      padding-left: 30px;
+      padding-right: 20px;
     }
 
     #contact-details-container {
@@ -828,7 +834,7 @@ li a:hover {
       /*margin-left: 370px;*/
     }
     #education-container p {
-      text-align: center;
+      text-align: left;
       font-family: 'Oxygen', sans-serif;
       color: black;
       margin-bottom: 50px;
@@ -890,9 +896,10 @@ li a:hover {
       text-align: center;
     }
     #work-skills-container p {
-      text-align: justify;
+      text-align: left;
       font-family: 'Oxygen', sans-serif;
       color: black;
+      padding-left: 20px;
     }
 
     #contact-details-container {
@@ -907,11 +914,11 @@ li a:hover {
     #contact-details-container h4{
       text-align: center;
       font-family: 'Boogaloo', cursive;
-      font-size: 25px;
+      font-size: 29px;
     }
     #contact-details-container p {
       text-align: justify;
-      margin-left: 300px;
+      margin-left: 320px;
       font-family: 'Oxygen', sans-serif;
       margin-top: 50px;
       font-size: 16px;
@@ -1623,7 +1630,7 @@ li a:hover {
 }
 
 @media screen
-  and (min-device-width: 100px)
+  and (min-device-width: 10px)
   and (max-device-width: 320px)
   and (-webkit-min-device-pixel-ratio: 1) {
     /*My Portfolio Styling*/
