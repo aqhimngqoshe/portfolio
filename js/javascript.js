@@ -1,4 +1,14 @@
 
+//dropdown menu
+$(function(){
+  $('.list').hide();
+});
+
+$(function(){
+  $('#default').click(function(){
+    $('.list').toggle();
+  });
+});
 //Work Experience Button toggle the information(hide/show)
 // 2WayTravel Work EXPERIENCE
 $(function(){
@@ -25,6 +35,9 @@ $(function(){
 // Life Choices
 $(function(){
   $('.lc-caption').hide();
+  function myFunction(x) {
+    x.classList.toggle("change");
+}
 });
 //Toggle function
 $(function(){
