@@ -1713,8 +1713,8 @@ li a:hover {
       font-size: 60px;
     }
     .menu li {
-      width: 50%;
-      font-size: 50px;
+      width: 100%;
+      font-size: 70px;
       margin-right: 50px;
       text-align: left;
       border: 1px solid white;
